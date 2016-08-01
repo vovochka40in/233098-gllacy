@@ -1,7 +1,7 @@
 # Личный проект «Глейси»
 
 * Студент: [Vladimir Sorokin](https://up.htmlacademy.ru/htmlcss/14/user/233098).
-* Наставник: `Неизвестно`.
+* Наставник: [Alexander Polovnikov](https://htmlacademy.ru/profile/alexpol).
 
 ---
 

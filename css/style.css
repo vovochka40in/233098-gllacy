@@ -1,0 +1,37 @@
+body
+{
+    font-family: Roboto Arial sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 16px;
+
+    color: white;
+}
+
+h1
+{
+    font-family: Roboto Arial sans-serif;
+    font-size: 35px;
+    font-weight: bold;
+    line-height: 41px;
+
+    color: white;
+}
+
+h2
+{
+    font-family: Roboto Arial sans-serif;
+    font-size: 35px;
+    font-weight: bold;
+    line-height: 41px;
+
+    color: white;
+}
+
+/*
+TMP
+*/
+body
+{
+    background-color: #849d8f;
+}

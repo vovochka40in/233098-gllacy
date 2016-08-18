@@ -1,7 +1,14 @@
+html {
+  background-color: #849d8f;
+}
+
 body {
   font-family: Roboto Arial sans-serif;
   font-size: 14px;
   line-height: 16px;
+
+  width: 900px;
+  margin: 0 auto;
 
   color: white;
 }
@@ -24,16 +31,346 @@ h2 {
   color: white;
 }
 
+.container {
+  width: 860px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  padding-top: 10px;
+}
+
+.main-header .container {
+  margin-right: 20px;
+  margin-left: 15px;
+}
+
+.logo {
+  float: left;
+
+  margin-right: 30px;
+}
+
+.logo-lnk {
+  float: left;
+
+  margin-right: 30px;
+}
+
+.call-us {
+  float: right;
+}
+
+.main-navigation {
+  float: left;
+
+  width: 365px;
+}
+
+.main-navigation li {
+  display: inline-block;
+  margin-right: 25px;
+}
+
+.breadcrumbs {
+  float: left;
+}
+
+.user-block {
+  float: right;
+}
+
+.user-block :nth-child(n) {
+  display: inline-block;
+  margin-left: 10px;
+}
+
+.breadcrumbs li {
+  display: inline-block;
+}
+
+form {
+  margin-bottom: 30px;
+}
+
+form :nth-child(n) {
+  display: inline-block;
+}
+
+form p {
+  width: 100%;
+}
+
+.selecter-sort {
+  width: 193px;
+  margin-right: 16px;
+}
+
+.selecter-price {
+  width: 219px;
+  margin-right: 16px;
+}
+
+.selecter-fat {
+  width: 414px;
+}
+
+.selecter-inside {
+  width: 702px;
+  margin-right: 13px;
+}
+
+.selecter-btn {
+  width: 144px;
+}
+
+.slider-wrapper {
+  width: 860px;
+  height: 584px;
+  min-height: 490px;
+  margin-top: -60px;
+  margin-right: auto;
+  margin-bottom: -21px;
+  margin-left: auto;
+
+  background: url('../img/pair-icecreams-1.png') no-repeat 50%;
+  position: relative;
+  z-index: -1;
+}
+
+.radio-wrapper {
+  position: absolute;
+  top: 480px;
+}
+
+.slider-wrapper a {
+  position: absolute;
+  top: 480px;
+  left: 400px;
+}
+
+.two-card-wrapper {
+  margin-bottom: 40px;
+  padding: 0 20px;
+}
+
+.card {
+  width: 420px;
+  min-height: 230px;
+
+  border-radius: 20px;
+}
+
+.present-left {
+  float: left;
+
+  background: url('../img/present-raspberry.jpg') no-repeat;
+}
+
+.present-right {
+  float: right;
+
+  background: url('../img/present-choko.jpg') no-repeat;
+}
+
+.catalog-index {
+  margin-bottom: 16px;
+  padding: 0 20px;
+}
+
+.catalog {
+  padding: 0 20px;
+  margin-bottom: 55px;
+}
+
+.catalog-index :last-child,
+.catalog-first-line :last-child,
+.catalog-second-line :last-child,
+.catalog-thrid-line :last-child {
+  margin-right: 0;
+}
+
+.catalog-item {
+  float: left;
+
+  width: 200px;
+  margin-right: 20px;
+  margin-bottom: 25px;
+}
+
 .catalog-pic {
   overflow: hidden;
+
   width: 199px;
   height: 199px;
+
   border-radius: 50%;
 }
+
+.catalog-item p {
+  text-align: center;
+}
+
+.features {
+  font-size: 0;
+
+  margin-bottom: 40px;
+  padding-top: 5px;
+  padding-left: 40px;
+
+  color: black;
+  min-height: 368px;
+}
+
+.features h2 {
+  display: block;
+  font-size: 24px;
+  line-height: 30px;
+  width: 786px;
+}
+
+.feature-item {
+  font-size: 16px;
+
+  display: inline-block;
+
+  width: 402px;
+  min-height: 124px;
+
+  vertical-align: top;
+}
+
+.feature-item:nth-child(2n) {
+  margin-right: 20px;
+}
+
+.feature-pic {
+  display: inline-block;
+
+  vertical-align: top;
+}
+
+.feature-text {
+  display: inline-block;
+
+  width: 349px;
+
+  vertical-align: top;
+}
+
+.second-card-block .card {
+  width: 420px;
+  min-height: 220px;
+
+  border-radius: 20px;
+}
+
+.news {
+  float: left;
+  background: url('../img/news-strawberry.jpg') no-repeat;
+}
+
+.mailout {
+  float: right;
+  background: url('../img/mailout-border.jpg') no-repeat;
+}
+
+.map {
+  width: 900px;
+  height: 430px;
+  position: relative;
+  background: url("../img/map.jpg") no-repeat;
+  margin-bottom: 20px;
+}
+
+.pin {
+  position: absolute;
+  top: 138px;
+  left: 185px;
+  background: url("../img/pin.png") no-repeat;
+}
+
+.map-contact {
+  position: absolute;
+  width: 302px;
+  height: 305px;
+  right: 20px;
+  top: 62px;
+}
+
+.pagination {
+  float: right;
+  margin-bottom: 47px;
+}
+
+.pagination :nth-child(n) {
+  display: inline-block;
+}
+
+.footer-social {
+  float: left;
+
+  width: 200px;
+  min-height: 32px;
+  margin-right: 20px;
+}
+
+.footer-link {
+  float: left;
+
+  width: 420px;
+}
+
+.footer-copyright {
+  float: right;
+
+  width: 200px;
+}
+
+
+
+
+
+.clearfix::after {
+  display: table;
+  clear: both;
+
+  width: 100%;
+
+  content: '';
+}
+
+
+
+
+
+
 
 /*
 TMP
 */
+/*
 body {
-  background-color: #849d8f;
+  background: #849d8f url('../img/gllacy-index-900.jpg') no-repeat 50% 1px;
 }
+
+/*
+OUTLINE
+*/
+
+
+.slider-wrapper {
+  outline: 2px dotted #00f;
+}
+
+body > * > * {
+  opacity: .8;
+  background-color: #7f6eff;
+}
+
+body > * > * > * {
+  background-color: #6eff75;
+}
+
+body > * > * > * > * {
+  background-color: #becc41;
+}
+/**/

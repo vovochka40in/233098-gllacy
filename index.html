@@ -8,50 +8,58 @@
   <body>
     <header class="main-header">
       <div class="container">
-        <img src="img/logo.svg" width="154" height="64" alt="Gllacy Logo">
-        <nav class="main-navigation">
-          <ul>
-            <li>
-              <a class="lnk" href="#">Каталог</a>
-            </li>
-            <li>
-              <a class="lnk" href="#">Доставка и оплата</a>
-            </li>
-            <li>
-              <a class="lnk" href="#">О Компании</a>
-            </li>
-          </ul>
-        </nav>
-        <div class="search"></div>
-        <div class="user-block">
-          <div class="login">
-            <a class="user-block-link" href="#">Вход</a>
-          </div>
-          <div class="basket">
-            <a class="user-block-link" href="#">Корзина</a>
+        <div class="first-line clearfix">
+          <img class="logo" src="img/logo.svg" width="154" height="64" alt="Gllacy Logo">
+          <nav class="main-navigation">
+            <ul>
+              <li>
+                <a class="lnk" href="#">Каталог</a>
+              </li>
+              <li>
+                <a class="lnk" href="#">Доставка и оплата</a>
+              </li>
+              <li>
+                <a class="lnk" href="#">О Компании</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="user-block">
+            <div class="search">?</div>
+            <div class="login">
+              <a class="user-block-link" href="#">Вход</a>
+            </div>
+            <div class="basket">
+              <a class="user-block-link" href="#">Корзина</a>
+            </div>
           </div>
         </div>
-        <div class="call-us">
-          <p>
-            С 10 до 20, ежедневно<br>
-            <b><a href="tel:88124502525">8 812 450-25-25</a></b>
-          </p>
+        <div class="second-line clearfix">
+          <div class="call-us">
+            <p>
+              С 10 до 20, ежедневно<br>
+              <b><a href="tel:88124502525">8 812 450-25-25</a></b>
+            </p>
+          </div>
         </div>
       </div>
     </header>
     <main>
       <div class="slider-wrapper">
         <div class="slides slider-1">
+        <!--
           <img src="img/pair-icecreams-1.png" width="647" height="584" alt="">
+        -->
         </div>
         <div class="slides slider-2"></div>
         <div class="slides slider-3"></div>
+        <div class="radio-wrapper">
           <input class="slide-rb" id="slide-1" type="radio" name="point" value="slide-1" checked>
           <input class="slide-rb" id="slide-2" type="radio" name="point" value="slide-2">
           <input class="slide-rb" id="slide-3" type="radio" name="point" value="slide-3">
+        </div>
           <a class="btn slide" href="#">Давайте оба!</a>
       </div>
-      <section class="two-card-wrapper">
+      <section class="two-card-wrapper clearfix">
         <div class="present-left card">
           <h2>Малинка даром!</h2>
           <p>При покупке 2 кг любого фрутового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
@@ -63,7 +71,7 @@
           <div class="btn present-btn"><a href="#">Хочу шоколадки!</a></div>
         </div>
       </section>
-      <section class="catalog-index">
+      <section class="catalog-index clearfix">
         <div class="catalog-item">
           <div class="catalog-pic">
             <img src="img/icecream-orange.jpg" width="200" height="200" alt="">
@@ -99,32 +107,40 @@
       </section>
       <section class="features">
         <h2>Магазин Глейси - это онлайн и офлайн магазин по продаже мороженого собственного производства на развес</h2>
-        <div class="features-pic">
-          <img src="img/icon-icecream.svg" width="49" height="49" alt="">
+        <div class="feature-item">
+          <div class="feature-pic">
+            <img src="img/icon-icecream.svg" width="49" height="49" alt="">
+          </div>
+          <div class="feature-text">
+            <p>Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</p>
+          </div>
         </div>
-        <div class="features-text">
-          <p>Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</p>
+        <div class="feature-item">
+          <div class="feature-pic">
+            <img src="img/icon-cow.svg" width="49" height="49" alt="">
+          </div>
+          <div class="feature-text">
+            <p>Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</p>
+          </div>
         </div>
-        <div class="features-pic">
-          <img src="img/icon-leaf.svg" width="49" height="49" alt="">
+        <div class="feature-item">
+          <div class="feature-pic">
+            <img src="img/icon-leaf.svg" width="49" height="49" alt="">
+          </div>
+          <div class="feature-text">
+            <p>Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</p>
+          </div>
         </div>
-        <div class="features-text">
-          <p>Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</p>
-        </div>
-        <div class="features-pic">
-          <img src="img/icon-cow.svg" width="49" height="49" alt="">
-        </div>
-        <div class="features-text">
-          <p>Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</p>
-        </div>
-        <div class="features-pic">
-          <img src="img/icon-term.svg" width="49" height="49" alt="">
-        </div>
-        <div class="features-text">
-          <p>Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</p>
+        <div class="feature-item">
+          <div class="feature-pic">
+            <img src="img/icon-term.svg" width="49" height="49" alt="">
+          </div>
+          <div class="feature-text">
+            <p>Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</p>
+          </div>
         </div>
       </section>
-      <section class="two-card-wrapper">
+      <section class="two-card-wrapper clearfix second-card-block">
         <div class="news card">
           <p>Новое в нашем блоге</p>
           <h3><a href="#">10 способов сервировки фруктовых щербетов к столу</a></h3>
@@ -138,6 +154,7 @@
         </div>
       </section>
       <section class="map">
+        <img class="pin" src="img/pin.png" width="218" height="142" alt="">
         <div class="map-contact">
           <p>
             Адрес главного офиса и<br>
@@ -152,12 +169,12 @@
             <b>8 812 450-25-25</b><br>
             (С 10 до 20 ежедневно)
           </p>
+          <a class="btn" href="#">Форма обратной связи</a>
         </div>
-        <a class="btn" href="#">Форма обратной связи</a>
       </section>
     </main>
     <footer class="main-footer">
-      <div class="container">
+      <div class="container clearfix">
         <div class="footer-social">
           <a class="social-btn social-btn-twit" href="#">Твиттер</a>
           <a class="social-btn social-btn-inst" href="#">Инстаграм</a>

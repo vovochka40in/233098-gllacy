@@ -2,6 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&subset=cyrillic" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <title>Gllacy Shop</title>
   </head>
@@ -24,7 +25,9 @@
             </ul>
           </nav>
           <div class="user-block">
-            <div class="search">?</div>
+            <div class="search">
+              <a class="user-block-link" href="#">?</a>
+            </div>
             <div class="login">
               <a class="user-block-link" href="#">Вход</a>
             </div>
@@ -45,112 +48,122 @@
     </header>
     <main>
       <div class="slider-wrapper">
-        <div class="slides slider-1">
-        <!--
-          <img src="img/pair-icecreams-1.png" width="647" height="584" alt="">
-        -->
-        </div>
-        <div class="slides slider-2"></div>
-        <div class="slides slider-3"></div>
-        <div class="radio-wrapper">
-          <input class="slide-rb" id="slide-1" type="radio" name="point" value="slide-1" checked>
-          <input class="slide-rb" id="slide-2" type="radio" name="point" value="slide-2">
-          <input class="slide-rb" id="slide-3" type="radio" name="point" value="slide-3">
-        </div>
+        <div class="container">
+          <div class="slides slider-1">
+          <!--
+            <img src="img/pair-icecreams-1.png" width="647" height="584" alt="">
+          -->
+          </div>
+          <div class="slides slider-2"></div>
+          <div class="slides slider-3"></div>
+          <div class="radio-wrapper">
+            <input class="slide-rb" id="slide-1" type="radio" name="point" value="slide-1" checked>
+            <input class="slide-rb" id="slide-2" type="radio" name="point" value="slide-2">
+            <input class="slide-rb" id="slide-3" type="radio" name="point" value="slide-3">
+          </div>
           <a class="btn slide" href="#">Давайте оба!</a>
-      </div>
-      <section class="two-card-wrapper clearfix">
-        <div class="present-left card">
-          <h2>Малинка даром!</h2>
-          <p>При покупке 2 кг любого фрутового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
-          <div class="btn present-btn"><a href="#">Хочу варенье!</a></div>
         </div>
-        <div class="present-right card">
-          <h2>Шоколадки даром!</h2>
-          <p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки абсолютно бесплатно.</p>
-          <div class="btn present-btn"><a href="#">Хочу шоколадки!</a></div>
+      </div>
+      <section class="two-card-wrapper">
+        <div class="container clearfix">
+          <div class="present-left card">
+            <h2>Малинка даром!</h2>
+            <p>При покупке 2 кг любого фрутового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
+            <div class="btn present-btn"><a href="#">Хочу варенье!</a></div>
+          </div>
+          <div class="present-right card">
+            <h2>Шоколадки даром!</h2>
+            <p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки абсолютно бесплатно.</p>
+            <div class="btn present-btn"><a href="#">Хочу шоколадки!</a></div>
+          </div>
         </div>
       </section>
-      <section class="catalog-index clearfix">
-        <div class="catalog-item">
-          <div class="catalog-pic">
-            <img src="img/icecream-orange.jpg" width="200" height="200" alt="">
+      <section class="catalog-index">
+        <div class="container clearfix">
+          <div class="catalog-item">
+            <div class="catalog-pic">
+              <img src="img/icecream-orange.png" alt="">
+            </div>
+            <div class="catalog-top-pic"></div>
+            <div class="catalog-price">310 Р/кг</div>
+            <p><a class="lnk desc" href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a></p>
           </div>
-          <div class="catalog-top-pic"></div>
-          <div class="catalog-price">310 Р/кг</div>
-          <p><a class="lnk desc" href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a></p>
-        </div>
-        <div class="catalog-item">
-          <div class="catalog-pic">
-            <img src="img/icecream-coffee-choko.jpg" width="200" height="200" alt="">
+          <div class="catalog-item">
+            <div class="catalog-pic">
+              <img src="img/icecream-coffee-choko.png"alt="">
+            </div>
+            <div class="catalog-top-pic"></div>
+            <div class="catalog-price">380 Р/кг</div>
+            <p><a class="lnk desc" href="#">Сливочно-кофейное с кусочками шоколада</a></p>
           </div>
-          <div class="catalog-top-pic"></div>
-          <div class="catalog-price">380 Р/кг</div>
-          <p><a class="lnk desc" href="#">Сливочно-кофейное с кусочками шоколада</a></p>
-        </div>
-        <div class="catalog-item">
-          <div class="catalog-pic">
-            <img src="img/icecream-strawberry.jpg" width="200" height="200" alt="">
+          <div class="catalog-item">
+            <div class="catalog-pic">
+              <img src="img/icecream-strawberry.png" alt="">
+            </div>
+            <div class="catalog-top-pic"></div>
+            <div class="catalog-price">355 Р/кг</div>
+            <p><a class="lnk desc" href="#">Сливочно-клубничное с присыпкой из белого шоколада</a></p>
           </div>
-          <div class="catalog-top-pic"></div>
-          <div class="catalog-price">355 Р/кг</div>
-          <p><a class="lnk desc" href="#">Сливочно-клубничное с присыпкой из белого шоколада</a></p>
-        </div>
-        <div class="catalog-item">
-          <div class="catalog-pic">
-            <img src="img/icecream-creme-brule.jpg" width="200" height="200" alt="">
+          <div class="catalog-item">
+            <div class="catalog-pic">
+              <img src="img/icecream-creme-brule.png"alt="">
+            </div>
+            <div class="catalog-top-pic"></div>
+            <div class="catalog-price">415 Р/кг</div>
+            <p><a class="lnk desc" href="#">Сливочное крем-брюле с карамельной подливкой</a></p>
           </div>
-          <div class="catalog-top-pic"></div>
-          <div class="catalog-price">415 Р/кг</div>
-          <p><a class="lnk desc" href="#">Сливочное крем-брюле с карамельной подливкой</a></p>
         </div>
       </section>
       <section class="features">
-        <h2>Магазин Глейси - это онлайн и офлайн магазин по продаже мороженого собственного производства на развес</h2>
-        <div class="feature-item">
-          <div class="feature-pic">
-            <img src="img/icon-icecream.svg" width="49" height="49" alt="">
+        <div class="container">
+          <h2>Магазин Глейси - это онлайн и офлайн магазин по продаже мороженого собственного производства на развес</h2>
+          <div class="feature-item">
+            <div class="feature-pic">
+              <img src="img/icon-icecream.svg" width="49" height="49" alt="">
+            </div>
+            <div class="feature-text">
+              <p>Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</p>
+            </div>
           </div>
-          <div class="feature-text">
-            <p>Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</p>
+          <div class="feature-item">
+            <div class="feature-pic">
+              <img src="img/icon-cow.svg" width="49" height="49" alt="">
+            </div>
+            <div class="feature-text">
+              <p>Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</p>
+            </div>
           </div>
-        </div>
-        <div class="feature-item">
-          <div class="feature-pic">
-            <img src="img/icon-cow.svg" width="49" height="49" alt="">
+          <div class="feature-item">
+            <div class="feature-pic">
+              <img src="img/icon-leaf.svg" width="49" height="49" alt="">
+            </div>
+            <div class="feature-text">
+              <p>Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</p>
+            </div>
           </div>
-          <div class="feature-text">
-            <p>Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</p>
-          </div>
-        </div>
-        <div class="feature-item">
-          <div class="feature-pic">
-            <img src="img/icon-leaf.svg" width="49" height="49" alt="">
-          </div>
-          <div class="feature-text">
-            <p>Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</p>
-          </div>
-        </div>
-        <div class="feature-item">
-          <div class="feature-pic">
-            <img src="img/icon-term.svg" width="49" height="49" alt="">
-          </div>
-          <div class="feature-text">
-            <p>Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</p>
+          <div class="feature-item">
+            <div class="feature-pic">
+              <img src="img/icon-term.svg" width="49" height="49" alt="">
+            </div>
+            <div class="feature-text">
+              <p>Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</p>
+            </div>
           </div>
         </div>
       </section>
-      <section class="two-card-wrapper clearfix second-card-block">
-        <div class="news card">
-          <p>Новое в нашем блоге</p>
-          <h3><a href="#">10 способов сервировки фруктовых щербетов к столу</a></h3>
-        </div>
-        <div class="mailout card">
-          <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой не нужной ерунды. Честно =)</p>
-          <form action="https://echo.htmlacademy.ru" method="post">
-            <input type="email" name="email" placeholder="Электронная почта">
-            <button class="btn" type="submit">Отправить</button>
-          </form>
+      <section class="two-card-wrapper second-card-block">
+        <div class="container clearfix">
+          <div class="news card">
+            <p>Новое в нашем блоге</p>
+            <h3><a href="#">10 способов сервировки фруктовых щербетов к столу</a></h3>
+          </div>
+          <div class="mailout card">
+            <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой не нужной ерунды. Честно =)</p>
+            <form action="https://echo.htmlacademy.ru" method="post">
+              <input type="email" name="email" placeholder="Электронная почта">
+              <button class="btn" type="submit">Отправить</button>
+            </form>
+          </div>
         </div>
       </section>
       <section class="map">

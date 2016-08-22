@@ -3,18 +3,15 @@ html {
 }
 
 body {
-  font-family: Roboto Arial sans-serif;
-  font-size: 14px;
-  line-height: 16px;
-
-  width: 900px;
-  margin: 0 auto;
-
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 18px;
   color: white;
+  margin: 0;
 }
 
 h1 {
-  font-family: Roboto Arial sans-serif;
+  font-family: Roboto, Arial, sans-serif;
   font-size: 35px;
   font-weight: bold;
   line-height: 41px;
@@ -23,7 +20,7 @@ h1 {
 }
 
 h2 {
-  font-family: Roboto Arial sans-serif;
+  font-family: Roboto, Arial, sans-serif;
   font-size: 35px;
   font-weight: bold;
   line-height: 41px;
@@ -32,15 +29,15 @@ h2 {
 }
 
 .container {
-  width: 860px;
+  min-width: 860px;
+  max-width: 1146px;
+  padding-left: 23px;
+  padding-right: 23px;
   margin: 0 auto;
-  margin-bottom: 10px;
-  padding-top: 10px;
 }
 
-.main-header .container {
-  margin-right: 20px;
-  margin-left: 15px;
+.main-header .first-line {
+  padding-top: 10px;
 }
 
 .logo {
@@ -61,13 +58,22 @@ h2 {
 
 .main-navigation {
   float: left;
+  width: 395px;
+}
 
-  width: 365px;
+.main-navigation ul {
+  padding: 0;
 }
 
 .main-navigation li {
   display: inline-block;
   margin-right: 25px;
+  list-style: none;
+  padding: 0;
+}
+
+.main-navigation a {
+  color: white;
 }
 
 .breadcrumbs {
@@ -76,11 +82,28 @@ h2 {
 
 .user-block {
   float: right;
+  font-size: 0;
 }
 
 .user-block :nth-child(n) {
   display: inline-block;
   margin-left: 10px;
+}
+
+.user-block a {
+  color: white;
+  font-size: 16px;
+  line-height: 18px;
+  display: inline-block;
+  text-decoration: none;
+  padding: 10px;
+  padding-left: 44px;
+  background-color: #9db1a5;
+  border-radius: 22px;
+}
+
+.search a {
+  padding-left: 10px;
 }
 
 .breadcrumbs li {
@@ -100,40 +123,37 @@ form p {
 }
 
 .selecter-sort {
-  width: 193px;
-  margin-right: 16px;
+  width: 192px;
+  margin-right: 14px;
 }
 
 .selecter-price {
-  width: 219px;
-  margin-right: 16px;
+  width: 218px;
+  margin-right: 14px;
 }
 
 .selecter-fat {
-  width: 414px;
+  width: 413px;
 }
 
 .selecter-inside {
-  width: 702px;
-  margin-right: 13px;
+  width: 701px;
+  margin-right: 11px;
 }
 
 .selecter-btn {
-  width: 144px;
+  width: 143px;
 }
 
 .slider-wrapper {
-  width: 860px;
-  height: 584px;
-  min-height: 490px;
-  margin-top: -60px;
+  min-height: 790px;
+  margin-top: -70px;
   margin-right: auto;
-  margin-bottom: -21px;
+  margin-bottom: -221px;
   margin-left: auto;
 
   background: url('../img/pair-icecreams-1.png') no-repeat 50%;
   position: relative;
-  z-index: -1;
 }
 
 .radio-wrapper {
@@ -144,44 +164,43 @@ form p {
 .slider-wrapper a {
   position: absolute;
   top: 480px;
-  left: 400px;
+  left: 600px;
 }
 
 .two-card-wrapper {
   margin-bottom: 40px;
-  padding: 0 20px;
 }
 
 .card {
-  width: 420px;
+  width: 49%;
   min-height: 230px;
-
   border-radius: 20px;
 }
 
 .present-left {
   float: left;
+  position: relative;
 
   background: url('../img/present-raspberry.jpg') no-repeat;
 }
 
 .present-right {
   float: right;
+  position: relative;
 
   background: url('../img/present-choko.jpg') no-repeat;
 }
 
 .catalog-index {
   margin-bottom: 16px;
-  padding: 0 20px;
+  max-height: 337px;
 }
 
 .catalog {
-  padding: 0 20px;
   margin-bottom: 55px;
 }
 
-.catalog-index :last-child,
+.catalog-item:last-child,
 .catalog-first-line :last-child,
 .catalog-second-line :last-child,
 .catalog-thrid-line :last-child {
@@ -190,23 +209,17 @@ form p {
 
 .catalog-item {
   float: left;
-
-  width: 200px;
-  margin-right: 20px;
+  width: 22%;
+  margin-right: 4%;
   margin-bottom: 25px;
-}
-
-.catalog-pic {
-  overflow: hidden;
-
-  width: 199px;
-  height: 199px;
-
-  border-radius: 50%;
 }
 
 .catalog-item p {
   text-align: center;
+}
+
+.catalog-pic img {
+  width: 100%;
 }
 
 .features {
@@ -214,17 +227,16 @@ form p {
 
   margin-bottom: 40px;
   padding-top: 5px;
-  padding-left: 40px;
 
   color: black;
   min-height: 368px;
 }
 
 .features h2 {
-  display: block;
+  /*display: block;*/
   font-size: 24px;
   line-height: 30px;
-  width: 786px;
+  /*width: 786px;*/
 }
 
 .feature-item {
@@ -232,14 +244,13 @@ form p {
 
   display: inline-block;
 
-  width: 402px;
-  min-height: 124px;
+  width: 48%;
 
   vertical-align: top;
 }
 
 .feature-item:nth-child(2n) {
-  margin-right: 20px;
+  margin-right: 4%;
 }
 
 .feature-pic {
@@ -251,15 +262,14 @@ form p {
 .feature-text {
   display: inline-block;
 
-  width: 349px;
+  width: 90%;
 
   vertical-align: top;
 }
 
 .second-card-block .card {
-  width: 420px;
   min-height: 220px;
-
+  width: 49%;
   border-radius: 20px;
 }
 
@@ -298,7 +308,9 @@ form p {
 
 .pagination {
   float: right;
+  margin-top: 100px;
   margin-bottom: 47px;
+  font-size: 16px;
 }
 
 .pagination :nth-child(n) {
@@ -315,7 +327,7 @@ form p {
 
 .footer-link {
   float: left;
-
+  /* margin: 0 auto; */
   width: 420px;
 }
 
@@ -361,16 +373,16 @@ OUTLINE
   outline: 2px dotted #00f;
 }
 
-body > * > * {
-  opacity: .8;
+.container {
+  opacity: 0.8;
   background-color: #7f6eff;
 }
 
-body > * > * > * {
+.container > * {
   background-color: #6eff75;
 }
 
-body > * > * > * > * {
+.container > * > * {
   background-color: #becc41;
 }
 /**/

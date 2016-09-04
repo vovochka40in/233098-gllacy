@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <title>Gllacy Shop</title>
   </head>
@@ -14,25 +15,62 @@
           <nav class="main-navigation">
             <ul>
               <li>
-                <a class="btn active" href="#">Каталог</a>
+                <a class="active-main-nav" href="#">Каталог</a>
               </li>
               <li>
-                <a class="lnk" href="#">Доставка и оплата</a>
+                <a class="lnk-main-nav" href="#">Доставка и оплата</a>
               </li>
               <li>
-                <a class="lnk" href="#">О Компании</a>
+                <a class="lnk-main-nav" href="#">О Компании</a>
               </li>
             </ul>
           </nav>
           <div class="user-block">
             <div class="search">
-              <a class="user-block-link" href="#"> ? </a>
+              <a class="user-block-link" href="#">
+                <svg class="hand-glass-svg" xmlns="http://www.w3.org/2000/svg" width="16.687" height="16.688" viewBox="0 0 16.687 16.688">
+                  <defs>
+                    <style>
+                      .cls-1 {
+                        fill: #fff;
+                        fill-rule: evenodd;
+                      }
+                    </style>
+                  </defs>
+                  <path id="Лупа" class="cls-1" d="M931.155,40.747H930.4l-0.264-.261a6.212,6.212,0,1,0-.675.675l0.263,0.262v0.755l4.773,4.76,1.423-1.422Zm-5.731,0a4.291,4.291,0,1,1,4.3-4.291A4.294,4.294,0,0,1,925.424,40.747Z" transform="translate(-919.219 -30.25)"/>
+                </svg>
+              </a>
             </div>
-            <div class="user-block-login">
-              <a class="user-block-link" href="#">Вход</a>
+            <div class="login">
+              <a class="user-block-link" href="#">
+                <svg class="log-in-svg" xmlns="http://www.w3.org/2000/svg" width="20.063" height="19" viewBox="0 0 20.063 19">
+                  <defs>
+                    <style>
+                      .cls-1 {
+                        fill: #fff;
+                        fill-opacity: 0.99;
+                        fill-rule: evenodd;
+                      }
+                    </style>
+                  </defs>
+                  <path id="Вход" class="cls-1" d="M973,32.968v-0.96a3,3,0,0,1,3-3h11.059a3,3,0,0,1,3,3V44.986a3,3,0,0,1-3,3H976a3,3,0,0,1-3-3V44h2v2h13V31H975v1.968h-2Zm-3,8.046h6.029v2.743l7.027-5.3-7.027-5.3V35.9H970v5.114Z" transform="translate(-970 -29)"/>
+                </svg>
+              Вход</a>
             </div>
-            <div class="user-block-basket active">
-              <a class="user-block-link" href="#">2 товара</a>
+            <div class="basket active">
+              <a class="user-block-link" href="#">
+                <svg class="basket-svg" xmlns="http://www.w3.org/2000/svg" width="20.63" height="19.719" viewBox="0 0 20.63 19.719">
+                  <defs>
+                    <style>
+                      .cls-1 {
+                        fill: #fff;
+                        fill-rule: evenodd;
+                      }
+                    </style>
+                  </defs>
+                  <path id="Корзина" class="cls-1" d="M1092.58,33.46l-1.21,8.912a2.025,2.025,0,0,1-1.88,1.635h-10.88a2.025,2.025,0,0,1-1.88-1.635l-1.47-10.287a3.738,3.738,0,0,1-.13-1.055H1073a1,1,0,0,1,0-2h4a0.992,0.992,0,0,1,.1,1.98h13.97C1092.17,31.01,1092.84,32.141,1092.58,33.46Zm-13.85,8.518-1.31-9h13.2l-0.03.2-1.18,8.788a0.033,0.033,0,0,0-.01.014h-10.67Zm0.52,3.009a1.874,1.874,0,1,1-1.88,1.874A1.874,1.874,0,0,1,1079.25,44.987Zm9,0a1.874,1.874,0,1,1-1.88,1.874A1.874,1.874,0,0,1,1088.25,44.987Z" transform="translate(-1072 -29.031)"/>
+                </svg>
+              2 товара</a>
             </div>
           </div>
         </div>
@@ -40,13 +78,13 @@
           <div class="breadcrumbs">
             <ul>
               <li>
-                <a class="lnk breadcrumbs-item" href="index.html">Главная</a>
+                <a class="breadcrumbs-item" href="index.html">Главная</a>
               </li>
               <li>
-                <a class="lnk breadcrumbs-item" href="#">Каталог</a>
+                <a class="breadcrumbs-item" href="#">Каталог</a>
               </li>
               <li>
-                <a class="lnk breadcrumbs-item no-active" href="#">Сливочное</a>
+                <a class="breadcrumbs-item no-active" href="#">Сливочное</a>
               </li>
             </ul>
           </div>
@@ -59,9 +97,9 @@
         </div>
       </div>
     </header>
-    <main>
+    <main class="main-catalog">
       <div class="container clearfix">
-        <h1>Сливочное мороженное</h1>
+        <h1>Сливочное мороженое</h1>
         <form action="https://echo.htmlacademy.ru" method="post">
           <div class="selecter-sort">
             <p>Сортировка:</p>
@@ -112,96 +150,131 @@
         </form>
       </div>
       <section class="catalog">
-        <div class="container">
+        <div class="container clearfix">
           <div class="catalog-first-line clearfix">
             <div class="catalog-item">
               <div class="catalog-pic">
-                <img src="img/icecream-orange.png" alt="">
+                <img class="image" src="img/icecream-orange.png" alt="">
+                <div class="catalog-price">310 <img src="img/rub.png" width="31" height="36" alt="">/кг</div>
               </div>
-              <div class="catalog-price">310 Р/кг</div>
               <p><a class="lnk desc" href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a></p>
+            <div class="catalog-item-overlay">
+              <a class="btn overlay-btn" href="#">Быстрый просмотр</a>
+            </div>
             </div>
             <div class="catalog-item">
               <div class="catalog-pic">
-                <img src="img/icecream-coffee-choko.png" alt="">
+                <img class="image" src="img/icecream-coffee-choko.png" alt="">
+                <div class="catalog-price">380 <img src="img/rub.png" width="31" height="36" alt="">/кг</div>
               </div>
-              <div class="catalog-price">380 Р/кг</div>
               <p><a class="lnk desc" href="#">Сливочно-кофейное с кусочками шоколада</a></p>
+            <div class="catalog-item-overlay">
+              <a class="btn overlay-btn" href="#">Быстрый просмотр</a>
+            </div>
             </div>
             <div class="catalog-item">
               <div class="catalog-pic">
-                <img src="img/icecream-strawberry.png" alt="">
+                <img class="image" src="img/icecream-strawberry.png" alt="">
+                <div class="catalog-price">355 <img src="img/rub.png" width="31" height="36" alt="">/кг</div>
               </div>
-              <div class="catalog-price">355 Р/кг</div>
               <p><a class="lnk desc" href="#">Сливочно-клубничное с присыпкой из белого шоколада</a></p>
-              <a class="btn" href="#">Быстрый просмотр</a>
+            <div class="catalog-item-overlay">
+              <a class="btn overlay-btn" href="#">Быстрый просмотр</a>
+            </div>
             </div>
             <div class="catalog-item">
               <div class="catalog-pic">
-                <img src="img/icecream-creme-brule.png" alt="">
+                <img class="image" src="img/icecream-creme-brule.png" alt="">
+                <div class="catalog-price">415 <img src="img/rub.png" width="31" height="36" alt="">/кг</div>
               </div>
-              <div class="catalog-price">415 Р/кг</div>
               <p><a class="lnk desc" href="#">Сливочное крем-брюле с карамельной подливкой</a></p>
+            <div class="catalog-item-overlay">
+              <a class="btn overlay-btn" href="#">Быстрый просмотр</a>
+            </div>
             </div>
           </div>
           <div class="catalog-second-line clearfix">
             <div class="catalog-item">
               <div class="catalog-pic">
-                <img src="img/icecream-red-bilberry.png" alt="">
+                <img class="image" src="img/icecream-red-bilberry.png" alt="">
+                <div class="catalog-price">325 <img src="img/rub.png" width="31" height="36" alt="">/кг</div>
               </div>
-              <div class="catalog-price">325 Р/кг</div>
               <p><a class="lnk desc" href="#">Сливочное с брусничным джемом</a></p>
+            <div class="catalog-item-overlay">
+              <a class="btn overlay-btn" href="#">Быстрый просмотр</a>
+            </div>
             </div>
             <div class="catalog-item">
               <div class="catalog-pic">
-                <img src="img/icecream-bilberry.png" alt="">
+                <img class="image" src="img/icecream-bilberry.png" alt="">
+                <div class="catalog-price">410 <img src="img/rub.png" width="31" height="36" alt="">/кг</div>
               </div>
-              <div class="catalog-price">410 Р/кг</div>
               <p><a class="lnk desc" href="#">Сливочно-черничное с цельными ягодами</a></p>
+            <div class="catalog-item-overlay">
+              <a class="btn overlay-btn" href="#">Быстрый просмотр</a>
+            </div>
             </div>
             <div class="catalog-item">
               <div class="catalog-pic">
-                <img src="img/icecream-lemon.png" alt="">
+                <img class="image" src="img/icecream-lemon.png" alt="">
+                <div class="catalog-price">375 <img src="img/rub.png" width="31" height="36" alt="">/кг</div>
               </div>
-              <div class="catalog-price">375 Р/кг</div>
               <p><a class="lnk desc" href="#">Сливочно-лимонное с карамельной присыпкой</a></p>
+            <div class="catalog-item-overlay">
+              <a class="btn overlay-btn" href="#">Быстрый просмотр</a>
+            </div>
             </div>
             <div class="catalog-item">
               <div class="catalog-pic">
-                <img src="img/icecream-small-choko.png" alt="">
+                <img class="image" src="img/icecream-small-choko.png" alt="">
+                <div class="catalog-price">320 <img src="img/rub.png" width="31" height="36" alt="">/кг</div>
               </div>
-              <div class="catalog-price">320 Р/кг</div>
               <p><a class="lnk desc" href="#">Сливочное с шоколадной стружкой</a></p>
+            <div class="catalog-item-overlay">
+              <a class="btn overlay-btn" href="#">Быстрый просмотр</a>
+            </div>
             </div>
           </div>
           <div class="catalog-thrid-line clearfix">
             <div class="catalog-item">
               <div class="catalog-pic">
-                <img src="img/icecream-vanilla.png" alt="">
+                <img class="image" src="img/icecream-vanilla.png" alt="">
+                <div class="catalog-price">440 <img src="img/rub.png" width="31" height="36" alt="">/кг</div>
               </div>
-              <div class="catalog-price">440 Р/кг</div>
               <p><a class="lnk desc" href="#">Сливочно-ванильное с кусочками шоколада</a></p>
+            <div class="catalog-item-overlay">
+              <a class="btn overlay-btn" href="#">Быстрый просмотр</a>
+            </div>
             </div>
             <div class="catalog-item">
               <div class="catalog-pic">
-                <img src="img/icecream-menthol.png" alt="">
+                <img class="image" src="img/icecream-menthol.png" alt="">
+                <div class="catalog-price">435 <img src="img/rub.png" width="31" height="36" alt="">/кг</div>
               </div>
-              <div class="catalog-price">435 Р/кг</div>
               <p><a class="lnk desc" href="#">Сливочное с ментоловым сиропом</a></p>
+            <div class="catalog-item-overlay">
+              <a class="btn overlay-btn" href="#">Быстрый просмотр</a>
+            </div>
             </div>
             <div class="catalog-item">
               <div class="catalog-pic">
-                <img src="img/icecream-large-choko.png" alt="">
+                <img class="image" src="img/icecream-large-choko.png" alt="">
+                <div class="catalog-price">355 <img src="img/rub.png" width="31" height="36" alt="">/кг</div>
               </div>
-              <div class="catalog-price">355 Р/кг</div>
               <p><a class="lnk desc" href="#">Сливочное с кусочками черного шоколада</a></p>
+            <div class="catalog-item-overlay">
+              <a class="btn overlay-btn" href="#">Быстрый просмотр</a>
+            </div>
             </div>
             <div class="catalog-item">
               <div class="catalog-pic">
-                <img src="img/icecream-mint.png" alt="">
+                <img class="image" src="img/icecream-mint.png" alt="">
+                <div class="catalog-price">420 <img src="img/rub.png" width="31" height="36" alt="">/кг</div>
               </div>
-              <div class="catalog-price">420 Р/кг</div>
               <p><a class="lnk desc" href="#">Сливочное с мятным сиропом</a></p>
+            <div class="catalog-item-overlay">
+              <a class="btn overlay-btn" href="#">Быстрый просмотр</a>
+            </div>
             </div>
           </div>
           <div class="pagination">
@@ -227,19 +300,71 @@
         <div class="footer-link">
           <div class="link-pic"></div>
           <div class="link-left">
-            <a href="#">Для поставщиков</a>
-            <a href="#">О производстве</a>
+            <a class="lnk" href="#">Для поставщиков</a>
+            <a class="lnk" href="#">О производстве</a>
           </div>
           <div class="link-right">
-            <a href="#">Наши документы</a>
-            <a href="#">Экологические стандарты</a>
+            <a class="lnk" href="#">Наши документы</a>
+            <a class="lnk" href="#">Экологические стандарты</a>
           </div>
         </div>
         <div class="footer-copyright">
-          <p>Создано в <a class="btn" href="https://htmlacademy.ru">HTML Academy</a> &copy; 2016</p>
+          <p>Создано в <a class="lnk" href="https://htmlacademy.ru">HTML Academy</a> &copy; 2016</p>
         </div>
       </div>
     </footer>
+    <div class="popup-login">
+      <form class="login-form popup-form" action="https://echo.htmlacademy.ru" method="post">
+        <input type="text" name="login" placeholder="Электронная почта">
+        <input type="password" name="password" placeholder="Пароль">
+        <button class="popup-login-btn btn" type="submit">Войти</button>
+      </form>
+      <div class="popup-login-link-block">
+        <a class="popup-forget lnk" href="#">Забыли пароль?</a>
+        <a class="popup-new lnk" href="#">Новая регистрация</a>
+      </div>
+    </div>
+    <div class="popup-main-nav">
+      <ul>
+        <li><a class="lnk popup-main-nav-first" href="#">Новинки</a></li>
+        <li><a class="lnk" href="#">Сливочное</a></li>
+        <li><a class="lnk" href="#">Щербеты</a></li>
+        <li><a class="lnk" href="#">Фруктовый лед</a></li>
+        <li><a class="lnk" href="#">Мелорин</a></li>
+      </ul>
+    </div>
+    <div class="popup-search">
+      <input type="text" name="search" placeholder="Что ищем?">
+    </div>
+    <div class="popup-feedback">
+      <b>Мы обязательно вам ответим!</b>
+      <submit class="button-close" type="button"></submit>
+      <form class="feedback-form popup-form login-form" action="https://echo.htmlacademy.ru" method="post">
+        <input type="text" name="feedback-name" placeholder="Как вас зовут?">
+        <input type="text" name="feedback-mail" placeholder="Ваша почта для ответа?">
+        <input type="text" name="feedback-message" placeholder="Напишите что-нибудь...">
+        <submit class="btn feedback-btn" type="submit">Отправить</submit>
+      </form>
+    </div>
+    <div class="feedback-overlay"></div>
+    <div class="popup-basket clearfix">
+      <div class="popup-basket-item">
+        <div class="popup-basket-item-close"></div>
+        <div class="popup-basket-item-pic"><img src="img/icecream-orange.png" alt=""></div>
+        <div class="popup-basket-item-name">Пломбир с апельсиновым джемом</div>
+        <div class="popup-basket-item-price">1,5 кг х <span>200 руб.</span></div>
+        <div class="popup-basket-item-total">300 руб.</div>
+      </div>
+      <div class="popup-basket-item">
+        <div class="popup-basket-item-close"></div>
+        <div class="popup-basket-item-pic"><img src="img/icecream-strawberry.png" alt=""></div>
+        <div class="popup-basket-item-name">Клубничный пломбир с присыпкой из белого шоколада</div>
+        <div class="popup-basket-item-price">1,5 кг х <span>300 руб.</span></div>
+        <div class="popup-basket-item-total">450 руб.</div>
+      </div>
+      <div class="popup-basket-total">Итого: 750 руб.</div>
+      <a href="#" class="btn">Оформить заказ</a>
+    </div>
     <script src="js/scripts.js"></script>
   </body>
 </html>

@@ -88,15 +88,23 @@
       <div class="slider-wrapper">
         <div class="container">
           <div class="gradient">
-            <div class="slides slider-1">
-            </div>
+            <div class="slides slider-1"></div>
           </div>
           <div class="slides slider-2"></div>
           <div class="slides slider-3"></div>
           <div class="radio-wrapper">
-            <input class="slide-rb" id="slide-1" type="radio" name="point" value="slide-1" checked>
-            <input class="slide-rb" id="slide-2" type="radio" name="point" value="slide-2">
-            <input class="slide-rb" id="slide-3" type="radio" name="point" value="slide-3">
+            <label class="radio-label">
+              <input type="radio" name="point" value="slide-1" checked>
+              <span class="radio-indicator"></span>
+            </label>
+            <label class="radio-label">
+              <input type="radio" name="point" value="slide-2">
+              <span class="radio-indicator"></span>
+            </label>
+            <label class="radio-label">
+              <input type="radio" name="point" value="slide-3">
+              <span class="radio-indicator"></span>
+            </label>
           </div>
           <a class="slider-btn slide" href="#">Давайте оба!</a>
         </div>
@@ -118,45 +126,53 @@
       <section class="catalog-index">
         <div class="container clearfix">
           <div class="catalog-item">
-            <div class="catalog-pic">
-              <img class="image" src="img/icecream-orange.png" alt="">
-              <div class="catalog-price">310<span class="price-litle"><img src="img/rub.png" width="31" height="36" alt="">/кг</span></div>
+            <div class="catalog-item-content">
+              <div class="catalog-pic">
+                <img class="image" src="img/icecream-orange.png" alt="">
+                <div class="catalog-price">310<span class="price-litle"><img src="img/rub.png" width="31" height="36" alt="">/кг</span></div>
+              </div>
+              <div class="catalog-top-pic"></div>
+              <p><a class="lnk desc" href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a></p>
             </div>
-            <div class="catalog-top-pic"></div>
-            <p><a class="lnk desc" href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a></p>
             <div class="catalog-item-overlay">
               <a class="btn overlay-btn" href="#">Быстрый просмотр</a>
             </div>
           </div>
           <div class="catalog-item">
-            <div class="catalog-pic">
-              <img class="image" src="img/icecream-coffee-choko.png" alt="">
-              <div class="catalog-price">380 <span class="price-litle"><img src="img/rub.png" width="31" height="36" alt="">/кг</span></div>
+            <div class="catalog-item-content">
+              <div class="catalog-pic">
+                <img class="image" src="img/icecream-coffee-choko.png" alt="">
+                <div class="catalog-price">380 <span class="price-litle"><img src="img/rub.png" width="31" height="36" alt="">/кг</span></div>
+              </div>
+              <div class="catalog-top-pic"></div>
+              <p><a class="lnk desc" href="#">Сливочно-кофейное с кусочками шоколада</a></p>
             </div>
-            <div class="catalog-top-pic"></div>
-            <p><a class="lnk desc" href="#">Сливочно-кофейное с кусочками шоколада</a></p>
             <div class="catalog-item-overlay">
               <a class="btn overlay-btn" href="#">Быстрый просмотр</a>
             </div>
           </div>
           <div class="catalog-item">
-            <div class="catalog-pic">
-              <img class="image" src="img/icecream-strawberry.png" alt="">
-              <div class="catalog-price">355 <img src="img/rub.png" width="31" height="36" alt="">/кг</div>
+            <div class="catalog-item-content">
+              <div class="catalog-pic">
+                <img class="image" src="img/icecream-strawberry.png" alt="">
+                <div class="catalog-price">355 <img src="img/rub.png" width="31" height="36" alt="">/кг</div>
+              </div>
+              <div class="catalog-top-pic"></div>
+              <p><a class="lnk desc" href="#">Сливочно-клубничное с присыпкой из белого шоколада</a></p>
             </div>
-            <div class="catalog-top-pic"></div>
-            <p><a class="lnk desc" href="#">Сливочно-клубничное с присыпкой из белого шоколада</a></p>
             <div class="catalog-item-overlay">
               <a class="btn overlay-btn" href="#">Быстрый просмотр</a>
             </div>
           </div>
           <div class="catalog-item">
-            <div class="catalog-pic">
-              <img class="image" src="img/icecream-creme-brule.png" alt="">
-              <div class="catalog-price">415 <img src="img/rub.png" width="31" height="36" alt="">/кг</div>
+            <div class="catalog-item-content">
+              <div class="catalog-pic">
+                <img class="image" src="img/icecream-creme-brule.png" alt="">
+                <div class="catalog-price">415 <img src="img/rub.png" width="31" height="36" alt="">/кг</div>
+              </div>
+              <div class="catalog-top-pic"></div>
+              <p><a class="lnk desc" href="#">Сливочное крем-брюле с карамельной подливкой</a></p>
             </div>
-            <div class="catalog-top-pic"></div>
-            <p><a class="lnk desc" href="#">Сливочное крем-брюле с карамельной подливкой</a></p>
             <div class="catalog-item-overlay">
               <a class="btn overlay-btn" href="#">Быстрый просмотр</a>
             </div>
@@ -206,13 +222,13 @@
         <div class="container clearfix">
           <div class="news card">
             <p>Новое в нашем блоге</p>
-            <h3><a href="#">10 способов сервировки фруктовых щербетов к столу</a></h3>
+            <a href="#">10 способов сервировки фруктовых щербетов к столу</a>
           </div>
           <div class="mailout card">
             <div class="mailout-background">
               <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой не нужной ерунды. Честно =)</p>
               <form action="https://echo.htmlacademy.ru" method="post">
-               <input type="email" name="email" placeholder="Электронная почта">
+                <input type="email" name="email" placeholder="Электронная почта">
                 <button class="btn" type="submit">Отправить</button>
               </form>
             </div>
@@ -245,23 +261,100 @@
     <footer class="main-footer">
       <div class="container clearfix">
         <div class="footer-social">
-          <a class="social-btn social-btn-twit" href="#">Твиттер</a>
-          <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
-          <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
-          <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
+          <a class="social-btn social-btn-twit" href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" width="31.375" height="31.4" viewBox="0 0 31.375 31.4">
+              <defs>
+                <style>
+                  .cls-1 {
+                    fill: #fff;
+                    fill-rule: evenodd;
+                    opacity: 0.8;
+                  }
+                </style>
+              </defs>
+              <path id="Твитер" class="cls-1" d="M38.427,2372.17a15.69,15.69,0,1,1-15.692,15.69A15.688,15.688,0,0,1,38.427,2372.17Zm9.137,10.81a7.331,7.331,0,0,1-2.092.57,3.663,3.663,0,0,0,1.6-2.02,7.4,7.4,0,0,1-2.313.89,3.645,3.645,0,0,0-6.207,3.32,10.316,10.316,0,0,1-7.507-3.81,3.655,3.655,0,0,0,1.127,4.87,3.68,3.68,0,0,1-1.65-.46c0,0.02,0,.03,0,0.05a3.651,3.651,0,0,0,2.922,3.57,3.788,3.788,0,0,1-.959.13,3.859,3.859,0,0,1-.685-0.07,3.643,3.643,0,0,0,3.4,2.53,7.29,7.29,0,0,1-4.524,1.56,8.286,8.286,0,0,1-.869-0.05,10.354,10.354,0,0,0,15.946-8.73c0-.16,0-0.31-0.011-0.47A7.328,7.328,0,0,0,47.565,2382.98Z" transform="translate(-22.75 -2372.16)"/>
+            </svg>
+          </a>
+          <a class="social-btn social-btn-inst" href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" width="31.376" height="31.41" viewBox="0 0 31.376 31.41">
+              <defs>
+                <style>
+                  .cls-1 {
+                    fill: #fff;
+                    fill-rule: evenodd;
+                    opacity: 0.8;
+                  }
+                </style>
+              </defs>
+              <path id="Инста" class="cls-1" d="M87.865,2372.23a15.69,15.69,0,1,1-15.692,15.69A15.688,15.688,0,0,1,87.865,2372.23Zm6.272,23.61a1.745,1.745,0,0,0,1.745-1.75v-12.31a1.743,1.743,0,0,0-1.745-1.74H81.809a1.743,1.743,0,0,0-1.745,1.74v12.31a1.745,1.745,0,0,0,1.745,1.75H94.136Zm-1.375-9.1a4.921,4.921,0,1,1-9.529,0h-1.38v6.78a0.609,0.609,0,0,0,.611.61H93.529a0.609,0.609,0,0,0,.611-0.61v-6.78H92.761ZM88,2385.13a2.848,2.848,0,1,1,0,5.68A2.84,2.84,0,0,1,88,2385.13Zm3.7-3.31H93.56a0.609,0.609,0,0,1,.611.61v1.86a0.609,0.609,0,0,1-.611.61H91.7a0.609,0.609,0,0,1-.611-0.61v-1.86A0.609,0.609,0,0,1,91.7,2381.82Z" transform="translate(-72.188 -2372.22)"/>
+            </svg>
+          </a>
+          <a class="social-btn social-btn-fb" href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" width="31.375" height="31.41" viewBox="0 0 31.375 31.41">
+              <defs>
+                <style>
+                  .cls-1 {
+                    fill: #fff;
+                    fill-rule: evenodd;
+                    opacity: 0.8;
+                  }
+                </style>
+              </defs>
+              <path id="ФБ" class="cls-1" d="M136.865,2372.23a15.69,15.69,0,1,1-15.692,15.69A15.687,15.687,0,0,1,136.865,2372.23Zm0.773,24.99v-9.29h2.743l0.285-3.09h-3.028l0-1.86c0-.89.085-1.26,1.367-1.26h1.764v-3.42h-2.792c-3.294,0-4.082,1.54-4.082,4.34v2.2h-1.889v3.09H133.9v9.29h3.738Z" transform="translate(-121.188 -2372.22)"/>
+            </svg>
+          </a>
+          <a class="social-btn social-btn-vk" href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" width="31.375" height="31.41" viewBox="0 0 31.375 31.41">
+              <defs>
+                <style>
+                  .cls-1 {
+                    fill: #fff;
+                    fill-rule: evenodd;
+                    opacity: 0.8;
+                  }
+                </style>
+              </defs>
+              <path id="ВК" class="cls-1" d="M185.865,2372.23a15.69,15.69,0,1,1-15.692,15.69A15.687,15.687,0,0,1,185.865,2372.23Zm5.968,18.25a3.1,3.1,0,0,0-.758-2.2,3.7,3.7,0,0,0-2.016-1.09v-0.07a2.881,2.881,0,0,0,1.371-1.14,3.211,3.211,0,0,0,.5-1.77,3.133,3.133,0,0,0-.362-1.52,2.6,2.6,0,0,0-1.091-1.05,4.514,4.514,0,0,0-1.446-.48,17.993,17.993,0,0,0-2.269-.11h-4.8v13.59H186.4a8.906,8.906,0,0,0,2.331-.25,4.774,4.774,0,0,0,1.686-.86,3.673,3.673,0,0,0,1.032-1.27,3.909,3.909,0,0,0,.384-1.78h0Zm-4.373-5.59a1.5,1.5,0,0,0-.169-0.67,1,1,0,0,0-.527-0.5,2.11,2.11,0,0,0-.8-0.17c-0.309,0-.767-0.01-1.375-0.01h-0.237v2.88h0.43c0.583,0,.994-0.01,1.229-0.02a2.045,2.045,0,0,0,.726-0.19,1.129,1.129,0,0,0,.563-0.53,1.9,1.9,0,0,0,.157-0.79h0Zm0.856,5.53a1.673,1.673,0,0,0-.255-0.99,1.533,1.533,0,0,0-.767-0.54,2.658,2.658,0,0,0-.853-0.13c-0.362-.01-0.848-0.01-1.456-0.01h-0.63v3.4h0.184c0.888,0,1.5-.01,1.843-0.02a2.867,2.867,0,0,0,1.04-.24,1.381,1.381,0,0,0,.68-0.59A1.813,1.813,0,0,0,188.316,2390.42Z" transform="translate(-170.188 -2372.22)"/>
+            </svg>
+          </a>
         </div>
         <div class="footer-link">
-          <div class="link-pic"></div>
+          <div class="link-pic">
+            <svg xmlns="http://www.w3.org/2000/svg" width="14.562" height="12.66" viewBox="0 0 14.562 12.66">
+              <defs>
+                <style>
+                  .cls-1 {
+                    fill: #f7f8f8;
+                    fill-rule: evenodd;
+                  }
+                </style>
+              </defs>
+              <path id="Сердце" class="cls-1" d="M434.606,2362.73s7.285-3.6,7.285-8.22c0-5.13-5.5-5.94-7.3-1.71m0.049,9.93s-7.285-3.6-7.285-8.22c0-5.13,5.5-5.94,7.3-1.71" transform="translate(-427.344 -2350.06)"/>
+            </svg>
+          </div>
           <div class="link-left">
-            <a class="lnk" href="#">Для поставщиков</a>
-            <a class="lnk" href="#">О производстве</a>
+            <a class="lnk lnk-bold" href="#"><span>Для поставщиков</span></a>
+            <a class="lnk" href="#"><span>О производстве</span></a>
           </div>
           <div class="link-right">
-            <a class="lnk" href="#">Наши документы</a>
-            <a class="lnk" href="#">Экологические стандарты</a>
+            <a class="lnk" href="#"><span>Наши документы</span></a>
+            <a class="lnk" href="#"><span>Экологические стандарты</span></a>
           </div>
         </div>
         <div class="footer-copyright">
+          <div class="footer-logo">
+            <svg xmlns="http://www.w3.org/2000/svg" width="107.622" height="36.69" viewBox="0 0 107.622 36.69">
+              <defs>
+                <style>
+                  .cls-1 {
+                    fill: #fff;
+                    fill-rule: evenodd;
+                  }
+                </style>
+              </defs>
+              <path id="Лого" class="cls-1" d="M1029.6,1589.28a1.983,1.983,0,0,0,.55-0.1v1.33a3.162,3.162,0,0,1-1.17.21,1.663,1.663,0,0,1-1.66-.97,4.791,4.791,0,0,1-3.13,1.07,2.6,2.6,0,0,1-2.9-2.54c0-2.13,1.97-2.78,3.7-2.78a10.993,10.993,0,0,1,2.16.24v-0.29c0-1.04-.76-1.77-2.18-1.77a7.336,7.336,0,0,0-2.99.64v-1.69a10.041,10.041,0,0,1,3.18-.55c2.35,0,3.84,1.12,3.84,3.63v2.97a0.533,0.533,0,0,0,.6.6m-6.41-1.12a1.348,1.348,0,0,0,1.55,1.23,3.373,3.373,0,0,0,2.41-.99V1587a9.984,9.984,0,0,0-1.8-.21c-1.05,0-2.16.33-2.16,1.37m12.3-6.08a4.919,4.919,0,0,1,2.56.64v1.69a4.059,4.059,0,0,0-2.3-.69,2.737,2.737,0,1,0-.03,5.46,5,5,0,0,0,2.42-.64v1.71a6.285,6.285,0,0,1-2.75.57,4.192,4.192,0,0,1-4.48-4.3,4.3,4.3,0,0,1,4.58-4.44m12.12,7.2a1.983,1.983,0,0,0,.55-0.1v1.33a3.162,3.162,0,0,1-1.17.21,1.663,1.663,0,0,1-1.66-.97,4.791,4.791,0,0,1-3.13,1.07,2.6,2.6,0,0,1-2.9-2.54c0-2.13,1.97-2.78,3.69-2.78a11.01,11.01,0,0,1,2.17.24v-0.29c0-1.04-.77-1.77-2.18-1.77a7.336,7.336,0,0,0-2.99.64v-1.69a9.985,9.985,0,0,1,3.18-.55c2.35,0,3.83,1.12,3.83,3.63v2.97a0.54,0.54,0,0,0,.61.6m-6.41-1.12a1.348,1.348,0,0,0,1.55,1.23,3.39,3.39,0,0,0,2.41-.99V1587a10.093,10.093,0,0,0-1.8-.21c-1.06,0-2.16.33-2.16,1.37m16.67-9.66v12.1h-1.65v-1.32a3.876,3.876,0,0,1-3.18,1.54,4.378,4.378,0,0,1,0-8.74,3.861,3.861,0,0,1,2.99,1.29v-4.87h1.84Zm-4.51,5.2a2.756,2.756,0,0,0,0,5.5,2.89,2.89,0,0,0,2.65-1.75v-2.02a2.905,2.905,0,0,0-2.65-1.73m10.51-1.62c3.3,0,4.44,2.66,3.91,5.06h-6.24c0.21,1.49,1.66,2.11,3.18,2.11a6.036,6.036,0,0,0,2.63-.59v1.59a7.192,7.192,0,0,1-2.98.57c-2.54,0-4.7-1.45-4.7-4.37a4.153,4.153,0,0,1,4.2-4.37m0.09,1.53a2.269,2.269,0,0,0-2.44,2.15h4.6a1.964,1.964,0,0,0-2.16-2.15m5.7,6.99v-8.3h1.64v1.04a3.806,3.806,0,0,1,2.77-1.26,2.813,2.813,0,0,1,2.59,1.33,4.087,4.087,0,0,1,2.9-1.33,3.042,3.042,0,0,1,3.15,3.33v5.19h-1.85v-5.14a1.577,1.577,0,0,0-1.64-1.74,2.774,2.774,0,0,0-2.06,1.12,5.459,5.459,0,0,1,.04.57v5.19h-1.85v-5.14a1.577,1.577,0,0,0-1.64-1.74,2.919,2.919,0,0,0-2.2,1.28v5.6h-1.85Zm21.21-8.3h1.93l-3.89,9.42c-0.89,2.16-2.07,2.89-3.33,2.89a5.088,5.088,0,0,1-1.09-.14v-1.58a2.787,2.787,0,0,0,.85.13c0.9,0,1.57-.64,2.05-1.94l0.18-.41-3.94-8.37h1.97l2.8,6.26Zm-67.14-18.33v4.72a3.8,3.8,0,0,1,2.68-1.14,3.231,3.231,0,0,1,3.42,3.39v5.13h-1.85v-4.89a1.8,1.8,0,0,0-1.93-1.99,2.927,2.927,0,0,0-2.32,1.39v5.49h-1.85v-12.1h1.85Zm11.17,0.85v2.96h3.01v1.62h-3.01v3.8c0,1.09.5,1.45,1.57,1.45a4.608,4.608,0,0,0,1.68-.32v1.59a6.9,6.9,0,0,1-2.23.36,2.539,2.539,0,0,1-2.85-2.73v-4.15h-1.49v-1.62h1.49v-2.51Zm5.37,11.25v-8.29h1.64v1.03a3.806,3.806,0,0,1,2.77-1.26,2.833,2.833,0,0,1,2.59,1.33,4.15,4.15,0,0,1,2.91-1.33,3.048,3.048,0,0,1,3.14,3.34v5.18h-1.85v-5.13a1.585,1.585,0,0,0-1.64-1.75,2.783,2.783,0,0,0-2.06,1.13,5.459,5.459,0,0,1,.04.57v5.18h-1.85v-5.13a1.585,1.585,0,0,0-1.64-1.75,2.948,2.948,0,0,0-2.2,1.28v5.6h-1.85Zm15.76,0h1.84v-12.1h-1.84v12.1Zm-56.207-13.52-0.152-.02-14.484,1.52v26.55l14.484,8.61,14.479-8.61v-26.55Zm12.437,26.97-12.589,7.49-12.589-7.49v-10.88l12.535,7.46,0.021,1.35-8.6-5.12-0.013,1.32,8.634,5.18,0.021,1.39-8.631-5.13-0.012,1.31,8.633,5.19,8.719-5.22v-1.31h-0.01v-4.29l3.88-2.31v11.06Zm-0.01-12.48-3.44,2.03-1.59.94-7.586-4.51-0.013,1.31,6.479,3.86-0.06.03-0.13.08-0.93.54-5.346-3.18-0.013,1.31,4.219,2.52-0.99.66-0.03.02-3.186-1.88-0.013,1.31,2.089,1.23-2.128,1.28-12.473-7.41,12.491-7.51h0Zm0.01-1.32-12.657-7.46h0l-12.518,7.45v-9.95l12.589-1.32,12.589,1.32v9.96Z" transform="translate(-985.188 -1562.53)"/>
+            </svg>
+          </div>
           <p>Создано в <a class="lnk" href="https://htmlacademy.ru">HTML Academy</a> &copy; 2016</p>
         </div>
       </div>
@@ -291,7 +384,7 @@
     </div>
     <div class="popup-feedback">
       <b>Мы обязательно вам ответим!</b>
-      <submit class="button-close" type="button"></submit>
+      <submit class="button-close feedback-closer" type="button"></submit>
       <form class="feedback-form popup-form login-form" action="https://echo.htmlacademy.ru" method="post">
         <input type="text" name="feedback-name" placeholder="Как вас зовут?">
         <input type="text" name="feedback-mail" placeholder="Ваша почта для ответа?">
@@ -300,6 +393,28 @@
       </form>
     </div>
     <div class="feedback-overlay"></div>
+    <div class="popup-basket clearfix">
+      <div class="popup-basket-item">
+        <div class="popup-basket-item-close">
+          <submit class="button-close remove-basket-item-1" type="button"></submit>
+        </div>
+        <div class="popup-basket-item-pic"><img src="img/icecream-orange.png" alt=""></div>
+        <div class="popup-basket-item-name">Пломбир с апельсиновым джемом</div>
+        <div class="popup-basket-item-price">1,5 кг х <span>200 руб.</span></div>
+        <div class="popup-basket-item-total">300 руб.</div>
+      </div>
+      <div class="popup-basket-item">
+        <div class="popup-basket-item-close">
+          <submit class="button-close remove-basket-item-2" type="button"></submit>
+        </div>
+        <div class="popup-basket-item-pic"><img src="img/icecream-strawberry.png" alt=""></div>
+        <div class="popup-basket-item-name">Клубничный пломбир с присыпкой из белого шоколада</div>
+        <div class="popup-basket-item-price">1,5 кг х <span>300 руб.</span></div>
+        <div class="popup-basket-item-total">450 руб.</div>
+      </div>
+      <div class="popup-basket-total">Итого: 750 руб.</div>
+      <a href="#" class="btn">Оформить заказ</a>
+    </div>
     <script src="js/scripts.js"></script>
   </body>
 </html>

@@ -8,6 +8,11 @@
     <title>Gllacy Shop</title>
   </head>
   <body class="index">
+    <input type="radio" id="btn-1" name="toggle" checked>
+    <input type="radio" id="btn-2" name="toggle">
+    <input type="radio" id="btn-3" name="toggle">
+    <div class="site-wrapper">
+    <div class="content-wrapper">
     <header class="main-header">
       <div class="container">
         <div class="first-line clearfix">
@@ -15,7 +20,17 @@
           <nav class="main-navigation">
             <ul>
               <li>
-                <a class="lnk-main-nav padd-null" href="#"><span>Каталог</span></a>
+                <a class="lnk-main-nav padd-null main-nav-cats" href="#"><span>Каталог</span></a>
+                <div class="popup-main-nav">
+                  <div></div>
+                  <ul class="popup-main-nav-ul">
+                    <li><a class="lnk popup-main-nav-first" href="#">Новинки</a></li>
+                    <li><a class="lnk" href="catalog.html">Сливочное</a></li>
+                    <li><a class="lnk" href="#">Щербеты</a></li>
+                    <li><a class="lnk" href="#">Фруктовый лед</a></li>
+                    <li><a class="lnk" href="#">Мелорин</a></li>
+                  </ul>
+                </div>
               </li>
               <li>
                 <a class="lnk-main-nav" href="#"><span>Доставка и оплата</span></a>
@@ -40,6 +55,10 @@
                   <path id="Лупа" class="cls-1" d="M931.155,40.747H930.4l-0.264-.261a6.212,6.212,0,1,0-.675.675l0.263,0.262v0.755l4.773,4.76,1.423-1.422Zm-5.731,0a4.291,4.291,0,1,1,4.3-4.291A4.294,4.294,0,0,1,925.424,40.747Z" transform="translate(-919.219 -30.25)"/>
                 </svg>
               </a>
+              <div class="popup-search">
+                <div class="bridge"></div>
+                <input type="text" name="search" placeholder="Что ищем?">
+              </div>
             </div>
             <div class="login">
               <a class="user-block-link" href="#">
@@ -56,6 +75,18 @@
                   <path id="Вход" class="cls-1" d="M973,32.968v-0.96a3,3,0,0,1,3-3h11.059a3,3,0,0,1,3,3V44.986a3,3,0,0,1-3,3H976a3,3,0,0,1-3-3V44h2v2h13V31H975v1.968h-2Zm-3,8.046h6.029v2.743l7.027-5.3-7.027-5.3V35.9H970v5.114Z" transform="translate(-970 -29)"/>
                 </svg>
               Вход</a>
+              <div class="popup-login">
+                <div class="bridge"></div>
+                <form class="login-form popup-form" action="https://echo.htmlacademy.ru" method="post">
+                  <input type="text" name="login" placeholder="Электронная почта">
+                  <input type="password" name="password" placeholder="Пароль">
+                  <button class="popup-login-btn btn" type="submit">Войти</button>
+                </form>
+                <div class="popup-login-link-block">
+                  <a class="popup-forget lnk" href="#">Забыли пароль?</a>
+                  <a class="popup-new lnk" href="#">Новая регистрация</a>
+                </div>
+              </div>
             </div>
             <div class="basket">
               <a class="user-block-link" href="#">
@@ -71,6 +102,29 @@
                   <path id="Корзина" class="cls-1" d="M1092.58,33.46l-1.21,8.912a2.025,2.025,0,0,1-1.88,1.635h-10.88a2.025,2.025,0,0,1-1.88-1.635l-1.47-10.287a3.738,3.738,0,0,1-.13-1.055H1073a1,1,0,0,1,0-2h4a0.992,0.992,0,0,1,.1,1.98h13.97C1092.17,31.01,1092.84,32.141,1092.58,33.46Zm-13.85,8.518-1.31-9h13.2l-0.03.2-1.18,8.788a0.033,0.033,0,0,0-.01.014h-10.67Zm0.52,3.009a1.874,1.874,0,1,1-1.88,1.874A1.874,1.874,0,0,1,1079.25,44.987Zm9,0a1.874,1.874,0,1,1-1.88,1.874A1.874,1.874,0,0,1,1088.25,44.987Z" transform="translate(-1072 -29.031)"/>
                 </svg>
               Пусто</a>
+              <div class="popup-basket clearfix">
+                <div class="bridge"></div>
+                <div class="popup-basket-item">
+                  <div class="popup-basket-item-close">
+                    <button class="button-close remove-basket-item-1" type="button"></button>
+                  </div>
+                  <div class="popup-basket-item-pic"><img src="img/icecream-orange.png" alt=""></div>
+                  <div class="popup-basket-item-name">Пломбир с апельсиновым джемом</div>
+                  <div class="popup-basket-item-price">1,5 кг х <span>200 руб.</span></div>
+                  <div class="popup-basket-item-total">300 руб.</div>
+                </div>
+                <div class="popup-basket-item">
+                  <div class="popup-basket-item-close">
+                    <button class="button-close remove-basket-item-2" type="button"></button>
+                  </div>
+                  <div class="popup-basket-item-pic"><img src="img/icecream-strawberry.png" alt=""></div>
+                  <div class="popup-basket-item-name">Клубничный пломбир с присыпкой из белого шоколада</div>
+                  <div class="popup-basket-item-price">1,5 кг х <span>300 руб.</span></div>
+                  <div class="popup-basket-item-total">450 руб.</div>
+                </div>
+                <div class="popup-basket-total">Итого: 750 руб.</div>
+                <a href="#" class="btn action-btn">Оформить заказ</a>
+              </div>
             </div>
           </div>
         </div>
@@ -84,42 +138,37 @@
         </div>
       </div>
     </header>
-    <main>
-      <div class="slider-wrapper">
-        <div class="container">
-          <div class="gradient">
-            <div class="slides slider-1"></div>
-          </div>
-          <div class="slides slider-2"></div>
-          <div class="slides slider-3"></div>
-          <div class="radio-wrapper">
-            <label class="radio-label">
-              <input type="radio" name="point" value="slide-1" checked>
-              <span class="radio-indicator"></span>
-            </label>
-            <label class="radio-label">
-              <input type="radio" name="point" value="slide-2">
-              <span class="radio-indicator"></span>
-            </label>
-            <label class="radio-label">
-              <input type="radio" name="point" value="slide-3">
-              <span class="radio-indicator"></span>
-            </label>
-          </div>
-          <a class="slider-btn slide" href="#">Давайте оба!</a>
-        </div>
+    <div class="slider">
+      <div class="slide" id="slide1">
+        <div class="slide-title">Крем-брюле и пломбир с малиновым джемом</div>
+          <a class="slide-btn" href="#">Давайте оба!</a>
       </div>
+      <div class="slide" id="slide2">
+          <div class="slide-title">Шоколадный пломбир и лимонный сорбет</div>
+          <a class="slide-btn" href="#">Давайте оба!</a>
+      </div>
+      <div class="slide" id="slide3">
+          <div class="slide-title">Пломбир с помадкой и клубничный щербет</div>
+          <a class="slide-btn" href="#">Давайте оба!</a>
+      </div>
+      <div class="slider-controls">
+            <label for="btn-1"></label>
+            <label for="btn-2"></label>
+            <label for="btn-3"></label>
+      </div>
+    </div>
+    <main>
       <section class="two-card-wrapper">
         <div class="container clearfix">
           <div class="present-left card clearfix">
             <h2>Малинка даром!</h2>
             <p>При покупке 2 кг любого фрутового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
-            <div class="present-btn"><a class="card-btn" href="#">Хочу варенье!</a></div>
+            <div class="present-btn"><a class="card-btn action-btn" href="#">Хочу варенье!</a></div>
           </div>
           <div class="present-right card clearfix">
             <h2>Шоколадки даром!</h2>
             <p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки абсолютно бесплатно.</p>
-            <div class="present-btn"><a class="card-btn" href="#">Хочу шоколадки!</a></div>
+            <div class="present-btn"><a class="card-btn action-btn" href="#">Хочу шоколадки!</a></div>
           </div>
         </div>
       </section>
@@ -132,10 +181,10 @@
                 <div class="catalog-price">310<span class="price-litle"><img src="img/rub.png" width="31" height="36" alt="">/кг</span></div>
               </div>
               <div class="catalog-top-pic"></div>
-              <p><a class="lnk desc" href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a></p>
+              <p><a class="lnk desc action-lnk" href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a></p>
             </div>
             <div class="catalog-item-overlay">
-              <a class="btn overlay-btn" href="#">Быстрый просмотр</a>
+              <a class="btn overlay-btn action-btn" href="#">Быстрый просмотр</a>
             </div>
           </div>
           <div class="catalog-item">
@@ -145,10 +194,10 @@
                 <div class="catalog-price">380 <span class="price-litle"><img src="img/rub.png" width="31" height="36" alt="">/кг</span></div>
               </div>
               <div class="catalog-top-pic"></div>
-              <p><a class="lnk desc" href="#">Сливочно-кофейное с кусочками шоколада</a></p>
+              <p><a class="lnk desc action-lnk" href="#">Сливочно-кофейное с кусочками шоколада</a></p>
             </div>
             <div class="catalog-item-overlay">
-              <a class="btn overlay-btn" href="#">Быстрый просмотр</a>
+              <a class="btn overlay-btn action-btn" href="#">Быстрый просмотр</a>
             </div>
           </div>
           <div class="catalog-item">
@@ -158,10 +207,10 @@
                 <div class="catalog-price">355 <img src="img/rub.png" width="31" height="36" alt="">/кг</div>
               </div>
               <div class="catalog-top-pic"></div>
-              <p><a class="lnk desc" href="#">Сливочно-клубничное с присыпкой из белого шоколада</a></p>
+              <p><a class="lnk desc action-lnk" href="#">Сливочно-клубничное с присыпкой из белого шоколада</a></p>
             </div>
             <div class="catalog-item-overlay">
-              <a class="btn overlay-btn" href="#">Быстрый просмотр</a>
+              <a class="btn overlay-btn action-btn" href="#">Быстрый просмотр</a>
             </div>
           </div>
           <div class="catalog-item">
@@ -171,10 +220,10 @@
                 <div class="catalog-price">415 <img src="img/rub.png" width="31" height="36" alt="">/кг</div>
               </div>
               <div class="catalog-top-pic"></div>
-              <p><a class="lnk desc" href="#">Сливочное крем-брюле с карамельной подливкой</a></p>
+              <p><a class="lnk desc action-lnk" href="#">Сливочное крем-брюле с карамельной подливкой</a></p>
             </div>
             <div class="catalog-item-overlay">
-              <a class="btn overlay-btn" href="#">Быстрый просмотр</a>
+              <a class="btn overlay-btn action-btn" href="#">Быстрый просмотр</a>
             </div>
           </div>
         </div>
@@ -229,7 +278,7 @@
               <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой не нужной ерунды. Честно =)</p>
               <form action="https://echo.htmlacademy.ru" method="post">
                 <input type="email" name="email" placeholder="Электронная почта">
-                <button class="btn" type="submit">Отправить</button>
+                <button class="btn action-btn" type="submit">Отправить</button>
               </form>
             </div>
           </div>
@@ -237,7 +286,7 @@
       </section>
       <section class="map">
         <!-- <img class="pin" src="img/pin.png" width="218" height="142" alt=""> -->
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3997.2091570173857!2d30.322425759587116!3d59.93870335310434!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1472408965045" width="1200" height="430" frameborder="0" style="border:0" allowfullscreen></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3997.2091570173857!2d30.322425759587116!3d59.93870335310434!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1472408965045" width="1200" height="430" style="border:0" allowfullscreen></iframe>
         <div class="map-contact">
           <p>
             <span class="map-contact-1">
@@ -254,7 +303,7 @@
             <span class="map-contact-4"><b>8 812 450-25-25</b><br></span>
             <span class="map-contact-5">(С 10 до 20 ежедневно)</span>
           </p>
-          <a class="btn map-contact-btn" href="#">Форма обратной связи</a>
+          <a class="btn map-contact-btn action-btn" href="#">Форма обратной связи</a>
         </div>
       </section>
     </main>
@@ -333,12 +382,12 @@
             </svg>
           </div>
           <div class="link-left">
-            <a class="lnk lnk-bold" href="#"><span>Для поставщиков</span></a>
-            <a class="lnk" href="#"><span>О производстве</span></a>
+            <a class="lnk lnk-bold action-lnk" href="#"><span>Для поставщиков</span></a>
+            <a class="lnk action-lnk" href="#"><span>О производстве</span></a>
           </div>
           <div class="link-right">
-            <a class="lnk" href="#"><span>Наши документы</span></a>
-            <a class="lnk" href="#"><span>Экологические стандарты</span></a>
+            <a class="lnk action-lnk" href="#"><span>Наши документы</span></a>
+            <a class="lnk action-lnk" href="#"><span>Экологические стандарты</span></a>
           </div>
         </div>
         <div class="footer-copyright">
@@ -355,65 +404,22 @@
               <path id="Лого" class="cls-1" d="M1029.6,1589.28a1.983,1.983,0,0,0,.55-0.1v1.33a3.162,3.162,0,0,1-1.17.21,1.663,1.663,0,0,1-1.66-.97,4.791,4.791,0,0,1-3.13,1.07,2.6,2.6,0,0,1-2.9-2.54c0-2.13,1.97-2.78,3.7-2.78a10.993,10.993,0,0,1,2.16.24v-0.29c0-1.04-.76-1.77-2.18-1.77a7.336,7.336,0,0,0-2.99.64v-1.69a10.041,10.041,0,0,1,3.18-.55c2.35,0,3.84,1.12,3.84,3.63v2.97a0.533,0.533,0,0,0,.6.6m-6.41-1.12a1.348,1.348,0,0,0,1.55,1.23,3.373,3.373,0,0,0,2.41-.99V1587a9.984,9.984,0,0,0-1.8-.21c-1.05,0-2.16.33-2.16,1.37m12.3-6.08a4.919,4.919,0,0,1,2.56.64v1.69a4.059,4.059,0,0,0-2.3-.69,2.737,2.737,0,1,0-.03,5.46,5,5,0,0,0,2.42-.64v1.71a6.285,6.285,0,0,1-2.75.57,4.192,4.192,0,0,1-4.48-4.3,4.3,4.3,0,0,1,4.58-4.44m12.12,7.2a1.983,1.983,0,0,0,.55-0.1v1.33a3.162,3.162,0,0,1-1.17.21,1.663,1.663,0,0,1-1.66-.97,4.791,4.791,0,0,1-3.13,1.07,2.6,2.6,0,0,1-2.9-2.54c0-2.13,1.97-2.78,3.69-2.78a11.01,11.01,0,0,1,2.17.24v-0.29c0-1.04-.77-1.77-2.18-1.77a7.336,7.336,0,0,0-2.99.64v-1.69a9.985,9.985,0,0,1,3.18-.55c2.35,0,3.83,1.12,3.83,3.63v2.97a0.54,0.54,0,0,0,.61.6m-6.41-1.12a1.348,1.348,0,0,0,1.55,1.23,3.39,3.39,0,0,0,2.41-.99V1587a10.093,10.093,0,0,0-1.8-.21c-1.06,0-2.16.33-2.16,1.37m16.67-9.66v12.1h-1.65v-1.32a3.876,3.876,0,0,1-3.18,1.54,4.378,4.378,0,0,1,0-8.74,3.861,3.861,0,0,1,2.99,1.29v-4.87h1.84Zm-4.51,5.2a2.756,2.756,0,0,0,0,5.5,2.89,2.89,0,0,0,2.65-1.75v-2.02a2.905,2.905,0,0,0-2.65-1.73m10.51-1.62c3.3,0,4.44,2.66,3.91,5.06h-6.24c0.21,1.49,1.66,2.11,3.18,2.11a6.036,6.036,0,0,0,2.63-.59v1.59a7.192,7.192,0,0,1-2.98.57c-2.54,0-4.7-1.45-4.7-4.37a4.153,4.153,0,0,1,4.2-4.37m0.09,1.53a2.269,2.269,0,0,0-2.44,2.15h4.6a1.964,1.964,0,0,0-2.16-2.15m5.7,6.99v-8.3h1.64v1.04a3.806,3.806,0,0,1,2.77-1.26,2.813,2.813,0,0,1,2.59,1.33,4.087,4.087,0,0,1,2.9-1.33,3.042,3.042,0,0,1,3.15,3.33v5.19h-1.85v-5.14a1.577,1.577,0,0,0-1.64-1.74,2.774,2.774,0,0,0-2.06,1.12,5.459,5.459,0,0,1,.04.57v5.19h-1.85v-5.14a1.577,1.577,0,0,0-1.64-1.74,2.919,2.919,0,0,0-2.2,1.28v5.6h-1.85Zm21.21-8.3h1.93l-3.89,9.42c-0.89,2.16-2.07,2.89-3.33,2.89a5.088,5.088,0,0,1-1.09-.14v-1.58a2.787,2.787,0,0,0,.85.13c0.9,0,1.57-.64,2.05-1.94l0.18-.41-3.94-8.37h1.97l2.8,6.26Zm-67.14-18.33v4.72a3.8,3.8,0,0,1,2.68-1.14,3.231,3.231,0,0,1,3.42,3.39v5.13h-1.85v-4.89a1.8,1.8,0,0,0-1.93-1.99,2.927,2.927,0,0,0-2.32,1.39v5.49h-1.85v-12.1h1.85Zm11.17,0.85v2.96h3.01v1.62h-3.01v3.8c0,1.09.5,1.45,1.57,1.45a4.608,4.608,0,0,0,1.68-.32v1.59a6.9,6.9,0,0,1-2.23.36,2.539,2.539,0,0,1-2.85-2.73v-4.15h-1.49v-1.62h1.49v-2.51Zm5.37,11.25v-8.29h1.64v1.03a3.806,3.806,0,0,1,2.77-1.26,2.833,2.833,0,0,1,2.59,1.33,4.15,4.15,0,0,1,2.91-1.33,3.048,3.048,0,0,1,3.14,3.34v5.18h-1.85v-5.13a1.585,1.585,0,0,0-1.64-1.75,2.783,2.783,0,0,0-2.06,1.13,5.459,5.459,0,0,1,.04.57v5.18h-1.85v-5.13a1.585,1.585,0,0,0-1.64-1.75,2.948,2.948,0,0,0-2.2,1.28v5.6h-1.85Zm15.76,0h1.84v-12.1h-1.84v12.1Zm-56.207-13.52-0.152-.02-14.484,1.52v26.55l14.484,8.61,14.479-8.61v-26.55Zm12.437,26.97-12.589,7.49-12.589-7.49v-10.88l12.535,7.46,0.021,1.35-8.6-5.12-0.013,1.32,8.634,5.18,0.021,1.39-8.631-5.13-0.012,1.31,8.633,5.19,8.719-5.22v-1.31h-0.01v-4.29l3.88-2.31v11.06Zm-0.01-12.48-3.44,2.03-1.59.94-7.586-4.51-0.013,1.31,6.479,3.86-0.06.03-0.13.08-0.93.54-5.346-3.18-0.013,1.31,4.219,2.52-0.99.66-0.03.02-3.186-1.88-0.013,1.31,2.089,1.23-2.128,1.28-12.473-7.41,12.491-7.51h0Zm0.01-1.32-12.657-7.46h0l-12.518,7.45v-9.95l12.589-1.32,12.589,1.32v9.96Z" transform="translate(-985.188 -1562.53)"/>
             </svg>
           </div>
-          <p>Создано в <a class="lnk" href="https://htmlacademy.ru">HTML Academy</a> &copy; 2016</p>
+          <p>Создано в <a class="lnk action-lnk" href="https://htmlacademy.ru"><span>HTML Academy</span></a> &copy; 2016</p>
         </div>
       </div>
     </footer>
-    <div class="popup-login">
-      <form class="login-form popup-form" action="https://echo.htmlacademy.ru" method="post">
-        <input type="text" name="login" placeholder="Электронная почта">
-        <input type="password" name="password" placeholder="Пароль">
-        <button class="popup-login-btn btn" type="submit">Войти</button>
-      </form>
-      <div class="popup-login-link-block">
-        <a class="popup-forget lnk" href="#">Забыли пароль?</a>
-        <a class="popup-new lnk" href="#">Новая регистрация</a>
-      </div>
-    </div>
-    <div class="popup-main-nav">
-      <ul>
-        <li><a class="lnk popup-main-nav-first" href="#">Новинки</a></li>
-        <li><a class="lnk" href="#">Сливочное</a></li>
-        <li><a class="lnk" href="#">Щербеты</a></li>
-        <li><a class="lnk" href="#">Фруктовый лед</a></li>
-        <li><a class="lnk" href="#">Мелорин</a></li>
-      </ul>
-    </div>
-    <div class="popup-search">
-      <input type="text" name="search" placeholder="Что ищем?">
-    </div>
     <div class="popup-feedback">
       <b>Мы обязательно вам ответим!</b>
-      <submit class="button-close feedback-closer" type="button"></submit>
+      <button class="button-close feedback-closer" type="button"></button>
       <form class="feedback-form popup-form login-form" action="https://echo.htmlacademy.ru" method="post">
         <input type="text" name="feedback-name" placeholder="Как вас зовут?">
         <input type="text" name="feedback-mail" placeholder="Ваша почта для ответа?">
         <input type="text" name="feedback-message" placeholder="Напишите что-нибудь...">
-        <submit class="btn feedback-btn" type="submit">Отправить</submit>
+        <button class="btn feedback-btn action-btn" type="submit">Отправить</button>
       </form>
     </div>
     <div class="feedback-overlay"></div>
-    <div class="popup-basket clearfix">
-      <div class="popup-basket-item">
-        <div class="popup-basket-item-close">
-          <submit class="button-close remove-basket-item-1" type="button"></submit>
-        </div>
-        <div class="popup-basket-item-pic"><img src="img/icecream-orange.png" alt=""></div>
-        <div class="popup-basket-item-name">Пломбир с апельсиновым джемом</div>
-        <div class="popup-basket-item-price">1,5 кг х <span>200 руб.</span></div>
-        <div class="popup-basket-item-total">300 руб.</div>
-      </div>
-      <div class="popup-basket-item">
-        <div class="popup-basket-item-close">
-          <submit class="button-close remove-basket-item-2" type="button"></submit>
-        </div>
-        <div class="popup-basket-item-pic"><img src="img/icecream-strawberry.png" alt=""></div>
-        <div class="popup-basket-item-name">Клубничный пломбир с присыпкой из белого шоколада</div>
-        <div class="popup-basket-item-price">1,5 кг х <span>300 руб.</span></div>
-        <div class="popup-basket-item-total">450 руб.</div>
-      </div>
-      <div class="popup-basket-total">Итого: 750 руб.</div>
-      <a href="#" class="btn">Оформить заказ</a>
+    </div>
     </div>
     <script src="js/scripts.js"></script>
   </body>

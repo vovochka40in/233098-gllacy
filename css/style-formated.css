@@ -6,7 +6,7 @@ body {
   position: relative;
 
   min-width: 900px;
-  max-width: 1200px;
+  /*   max-width: 1200px; */
   margin: 0 auto;
 
   color: white;
@@ -126,6 +126,10 @@ h2 {
   z-index: 5;
 
   display: block;
+}
+
+.popup-wrapper {
+  padding-top: 10px;
 }
 
 .lnk-main-nav {
@@ -578,7 +582,7 @@ select[name='sort'] {
 }
 
 .selecter-inside .checkbox-label {
-  margin-right: 20px;
+  margin-right: 19px;
 }
 
 .selecter-inside .checkbox-label:last-child {
@@ -1026,9 +1030,10 @@ a.slide {
 }
 
 .mailout input {
+  width: 53%;
   margin-right: 5px;
   padding-top: 11px;
-  padding-right: 110px;
+  padding-right: 5px;
   padding-bottom: 13px;
   padding-left: 13px;
 
@@ -1077,8 +1082,8 @@ a.slide {
   line-height: 20px;
 
   position: absolute;
-  top: 40px;
-  right: 27px;
+  top: 62px;
+  right: 7.5%;
 
   width: 277px;
   height: 275px;
@@ -1553,6 +1558,15 @@ body header .main-navigation .popup-main-nav {
 }
 
 .popup-feedback .feedback-btn {
+  font-size: 18px;
+
+  float: right;
+
+  padding-top: 12px;
+  padding-right: 22px;
+  padding-bottom: 14px;
+  padding-left: 22px;
+
   text-align: right;
 
   border: none;
@@ -1736,11 +1750,14 @@ body header .main-navigation .popup-main-nav {
 
 .content-wrapper {
   margin: 0 auto;
+  /*   max-width: 1200px; */
 }
 
 .slider {
   position: relative;
 
+  max-width: 1200px;
+  margin: 0 auto;
   margin-bottom: 41px;
   padding-top: 270px;
 
@@ -1913,6 +1930,10 @@ select[name='sort']:hover {
 
 .social-btn:hover .cls-1 {
   opacity: 1;
+}
+
+.popup-search form {
+  margin-bottom: 0;
 }
 
 .clearfix::after {

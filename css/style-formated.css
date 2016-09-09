@@ -1936,6 +1936,10 @@ select[name='sort']:hover {
   margin-bottom: 0;
 }
 
+iframe {
+  width: 100%;
+}
+
 .clearfix::after {
   display: table;
   clear: both;

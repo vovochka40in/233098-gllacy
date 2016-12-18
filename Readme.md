@@ -1,4 +1,5 @@
-[GitHub Pages](https://vovochka40in.github.io/233098-gllacy/).
+[GitHub Pages](https://vovochka40in.github.io/233098-gllacy/)
+
 Second page "Каталог->Сливочное"
 
 # Личный проект «Глейси»
